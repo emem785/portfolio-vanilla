@@ -1,0 +1,174 @@
+@use "./colors" as *;
+@use "./mixins" as *;
+@import "./pages/index";
+@import "./pages/description_page";
+
+body {
+	margin: 1em 3em;
+	background-color: $dark-bg;
+	font-family: 'Inconsolata', sans-serif;
+}
+
+@media only screen and (min-width:1200px) {
+	body {
+		width: 1100px;
+		margin: 1em auto;
+	}
+
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: 800;
+	color: $alt-text;
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: 600;
+	color: $alt-text;
+}
+
+p {
+	font-size: 1.3rem;
+	color: $text;
+}
+
+
+header {
+	display: flex;
+	justify-content: space-between;
+
+	img {
+		height: 3em;
+	}
+
+	a {
+		text-decoration: none;
+		color: $text;
+		background-color: $alt-text;
+		border-radius: 0.5em;
+		padding: 0.9em 1.5em;
+	}
+}
+
+
+footer {
+	padding-block: 4em;
+	width: 100%;
+
+	.reach-out-section {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 4em;
+
+		img {
+			height: 3.125em;
+			padding-bottom: 1em;
+		}
+
+		p {
+			margin-block: 0;
+		}
+	}
+
+	.contact-section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		h2 {
+			margin-block: 0;
+		}
+
+		div.contact-info {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			align-items: center;
+			padding-inline: 1em;
+			margin-block: 0.9em;
+
+			div {
+				display: flex;
+				justify-content: start;
+				width: 100%;
+				margin-bottom: 1em;
+
+				img {
+					height: 2em;
+				}
+
+				p {
+					margin: 0 1em;
+					color: $alt-text;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+
+@media only screen and (min-width:680px) {
+
+	footer {
+
+		section.reach-out-section {
+			align-items: center;
+
+		}
+
+
+		section.contact-section {
+			div.contact-info {
+				display: grid;
+				width: 70%;
+				grid-template-columns: 2fr 1fr;
+				padding-inline: 4em;
+			}
+		}
+	}
+
+}
+
+
+@media only screen and (min-width:1200px) {
+
+	footer {
+		display: flex;
+		width: 70%;
+		justify-content: center;
+		margin-inline: auto;
+
+		.reach-out-section {
+			align-items: start;
+			margin-right: 3em;
+
+		}
+
+		section.contact-section {
+			align-items: start;
+
+			div.contact-info {
+				padding-inline: 0;
+				column-gap: 2em;
+
+				div {
+					padding-inline: 0;
+
+					p {
+						margin-inline: 0.5em;
+					}
+				}
+
+
+			}
+
+		}
+
+	}
+}
