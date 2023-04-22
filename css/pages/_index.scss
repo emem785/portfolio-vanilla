@@ -121,8 +121,8 @@ main {
 		div.skills-list {
 			display: grid;
 			grid-template-columns: repeat(2, auto);
-			column-gap: 1em;
-			row-gap: 3em;
+			row-gap: 4em;
+			column-gap: 3em;
 			width: auto;
 
 		}

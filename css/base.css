@@ -93,9 +93,9 @@ main {
   .skills-section div.skills-list {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    -moz-column-gap: 1em;
-         column-gap: 1em;
-    row-gap: 3em;
+    row-gap: 4em;
+    -moz-column-gap: 3em;
+         column-gap: 3em;
     width: auto;
   }
   .skills-section div.skills-list > div {
