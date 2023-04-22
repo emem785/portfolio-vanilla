@@ -189,9 +189,18 @@ section.works-section div.projects-display div.project-container div.project-ove
   align-items: center;
 }
 
-.banner-img img {
+.page-margin {
+  margin-inline: 3em;
+  width: auto;
+}
+
+.banner-img {
+  margin: 0;
   width: 100%;
+}
+.banner-img img {
   height: 15em;
+  width: 100%;
 }
 
 @media only screen and (min-width: 680px) {
@@ -205,7 +214,6 @@ section.works-section div.projects-display div.project-container div.project-ove
   }
 }
 body {
-  margin: 1em 3em;
   background-color: #1B1A17;
   font-family: "Inconsolata", sans-serif;
 }

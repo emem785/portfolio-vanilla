@@ -6,11 +6,18 @@
 
 }
 
+.page-margin {
+	margin-inline: 3em;
+	width: auto;
+}
+
 
 .banner-img {
-	img {
+		margin: 0;
 		width: 100%;
+	img {
 		height: 15em;
+		width: 100%;
 	}
 }
 
