@@ -92,13 +92,11 @@ main {
 @media only screen and (min-width: 680px) {
   .skills-section div.skills-list {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 1em;
+    grid-template-columns: repeat(2, auto);
+    row-gap: 4em;
+    -moz-column-gap: 3em;
+         column-gap: 3em;
     width: auto;
-  }
-  .skills-section div.skills-list :nth-child(4) {
-    grid-column: 2/3;
-    grid-row: 4/5;
   }
   .skills-section div.skills-list > div {
     flex-direction: column;
@@ -169,7 +167,7 @@ section.works-section div.projects-display div.project-container div.project-ove
   padding: 0.75em;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 680px) {
   section.works-section div.projects-display {
     display: grid;
     grid-template-columns: auto auto;
